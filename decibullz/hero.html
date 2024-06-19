@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /*Header */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            position: sticky;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            color: black;
+        }
+        #navbar li a:hover{
+            background: orange;
+        }
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: lightsalmon;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
+        #icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #icons a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* Home Page */
+        #hero {
+            background-image: url("./images/hero-img2.jpg");
+            height: 75vh;
+            width: 100%;
+            background-size: cover;
+            background-position: top 25% right 0;
+            padding: 0 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #hero h4 {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: none;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        #hero h1 {
+            color: #ffffff;
+            font-size: 50px;
+            margin-bottom: 0%;
+            margin-top: 0%;
+        }
+
+        #hero button {
+            margin-top: 1rem;
+            display: inline-block;
+            background-color: #ffffff;
+            color: black;
+            border-radius: 0.5rem;
+            padding: 15px 40px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="./images/deci-logo1.jpg" style="width: 122px; height: 38px;" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="#">HEARING PROTECTION</a></li>
+                <li><a href="#">HEADPHONES</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+        </div>
+        <div id="icons">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>THE NEW</h4>
+        <h1>HIGH FIDELITY EARPLUGS</h1>
+        <button>LEARN MORE</button>
+    </section>
+</body>
+</html>
